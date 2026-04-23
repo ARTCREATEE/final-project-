@@ -2,14 +2,193 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Website Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xbox 360 — A Memory</title>
 	<link rel="stylesheet" href="./assets/css/styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
-	<h1>Website Template</h1>
-	<p>Fork and use this template repo (a.k.a. "boilerplate") for any web project</p>
-	<img src="assets/img/cat.jpg" alt="">
+	<nav class="nav">
+		<span class="nav-logo" data-page="landing">Xbox 360</span>
+		<div class="nav-links">
+			<span class="nav-link" data-page="games">Games</span>
+			<span class="nav-link" data-page="hardware">Hardware</span>
+			<span class="nav-link" data-page="about">About</span>
+		</div>
+	</nav>
+
+	<!-- LANDING -->
+	<div id="landing" class="page visible">
+		<div class="landing-body">
+			<div class="landing-left">
+				<p class="eyebrow">A memory &middot; 2005 &ndash; 2013</p>
+				<h1 class="headline">
+					You<br>
+					were<br>
+					<span class="stroke">there.</span>
+				</h1>
+				<p class="body-text">
+					Before streaming took over. Before battle passes.
+					Before everything got complicated. This is a record
+					of what it felt like to hold that controller
+					for the first time.
+				</p>
+				<span class="cta" data-page="games">Read on &rarr;</span>
+			</div>
+			<div class="landing-right">
+				<svg class="ring-svg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="80" cy="80" r="72" stroke="#c8ddb8" stroke-width="0.5"/>
+					<circle cx="80" cy="80" r="54" stroke="#c8ddb8" stroke-width="0.5"/>
+					<circle cx="80" cy="80" r="36" stroke="#107c10" stroke-width="1"/>
+					<circle cx="80" cy="80" r="20" fill="#107c10"/>
+					<text x="80" y="86" font-family="Anton" font-size="18" fill="#eef4e8" text-anchor="middle" letter-spacing="2">X</text>
+					<circle cx="80" cy="26" r="4" fill="#c8ddb8"/>
+					<circle cx="134" cy="80" r="4" fill="#c8ddb8"/>
+					<circle cx="80" cy="134" r="4" fill="#c8ddb8"/>
+					<circle cx="26" cy="80" r="4" fill="#107c10"/>
+				</svg>
+				<p class="ring-label">Ring of light</p>
+				<span class="tag-pill">2005 &ndash; 2013</span>
+			</div>
+		</div>
+		<div class="landing-footer">
+			<div class="footer-games">
+				<span>Halo 3</span>
+				<span>Gears of War</span>
+				<span>Skate</span>
+				<span>Mass Effect</span>
+			</div>
+			<p class="big-year">360</p>
+		</div>
+	</div>
+
+	<!-- GAMES -->
+	<div id="games" class="page">
+		<div class="inner-content">
+			<p class="pg-label">The games</p>
+			<h2 class="pg-title">What we <span class="stroke">played.</span></h2>
+
+			<div class="game-entry">
+				<span class="g-num">01</span>
+				<div class="g-body">
+					<p class="g-genre">First-person shooter</p>
+					<h3 class="g-name">Halo 3</h3>
+					<p class="g-desc">LAN parties, split-screen, four controllers on one TV. You memorized every map. You knew exactly where the sniper rifle spawned on The Pit. You finish the fight.</p>
+				</div>
+				<div class="g-dot on"></div>
+			</div>
+
+			<div class="game-entry">
+				<span class="g-num">02</span>
+				<div class="g-body">
+					<p class="g-genre">Third-person shooter</p>
+					<h3 class="g-name">Gears of War</h3>
+					<p class="g-desc">Nobody had seen anything look like that before. The chainsaw on the gun was ridiculous and perfect. You and a friend played it in a single weekend and neither of you slept much.</p>
+				</div>
+				<div class="g-dot"></div>
+			</div>
+
+			<div class="game-entry">
+				<span class="g-num">03</span>
+				<div class="g-body">
+					<p class="g-genre">Open world</p>
+					<h3 class="g-name">Red Dead Redemption</h3>
+					<p class="g-desc">You rode across that desert and felt genuinely alone in a good way. The ending hit different. You sat with it for a while after the credits rolled.</p>
+				</div>
+				<div class="g-dot"></div>
+			</div>
+
+			<div class="game-entry">
+				<span class="g-num">04</span>
+				<div class="g-body">
+					<p class="g-genre">Skateboarding</p>
+					<h3 class="g-name">Skate</h3>
+					<p class="g-desc">The flick stick changed everything. Suddenly skating felt real — clumsy, physical, earned. You bailed a hundred times on the same line and kept going back.</p>
+				</div>
+				<div class="g-dot"></div>
+			</div>
+
+			<div class="game-entry">
+				<span class="g-num">05</span>
+				<div class="g-body">
+					<p class="g-genre">Action RPG</p>
+					<h3 class="g-name">Mass Effect 2</h3>
+					<p class="g-desc">You built a crew. You learned their names, their problems, their histories. When the suicide mission came you were scared to lose them. Games hadn't done that before.</p>
+				</div>
+				<div class="g-dot"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- HARDWARE -->
+	<div id="hardware" class="page">
+		<div class="inner-content">
+			<p class="pg-label">The hardware</p>
+			<h2 class="pg-title">The <span class="stroke">machine.</span></h2>
+
+			<div class="hw-row">
+				<svg class="hw-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="7" y="12" width="42" height="32" rx="3" fill="#d4e4c4"/>
+					<rect x="7" y="12" width="42" height="13" rx="3" fill="#c8ddb8"/>
+					<rect x="20" y="17" width="16" height="4" rx="1" fill="#b0c8a0"/>
+					<line x1="38" y1="13" x2="38" y2="25" stroke="#b0c8a0" stroke-width="1"/>
+					<line x1="41" y1="13" x2="41" y2="25" stroke="#b0c8a0" stroke-width="1"/>
+					<circle cx="13" cy="30" r="4" fill="#107c10"/>
+				</svg>
+				<div class="hw-body">
+					<h3 class="hw-name">The console</h3>
+					<p class="hw-desc">White, boxy, louder than it needed to be. Released 2005. It ran hot, scratched discs if you moved it, and yellowed over time. You loved it anyway.</p>
+				</div>
+			</div>
+
+			<div class="hw-row">
+				<svg class="hw-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<ellipse cx="28" cy="24" rx="17" ry="12" fill="#d4e4c4"/>
+					<ellipse cx="15" cy="38" rx="9" ry="11" fill="#c8ddb8"/>
+					<ellipse cx="41" cy="38" rx="9" ry="11" fill="#c8ddb8"/>
+					<circle cx="28" cy="21" r="4" fill="#107c10"/>
+					<circle cx="36" cy="18" r="2.5" fill="#c0392b"/>
+					<circle cx="40" cy="25" r="2.5" fill="#107c10"/>
+					<circle cx="33" cy="27" r="2.5" fill="#1a6bb5"/>
+					<circle cx="37" cy="32" r="2.5" fill="#d4a017"/>
+				</svg>
+				<div class="hw-body">
+					<h3 class="hw-name">The controller</h3>
+					<p class="hw-desc">Wireless, comfortable, perfectly weighted. The four colored buttons became muscle memory. The thumbstick rubber wore off after a year. You didn't mind.</p>
+				</div>
+			</div>
+
+			<div class="hw-row">
+				<svg class="hw-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<circle cx="28" cy="28" r="20" stroke="#d4e4c4" stroke-width="1.5" fill="none"/>
+					<path d="M28 8 A20 20 0 0 1 48 28" stroke="#c0392b" stroke-width="3" fill="none" stroke-linecap="round"/>
+					<path d="M48 28 A20 20 0 0 1 28 48" stroke="#c0392b" stroke-width="3" fill="none" stroke-linecap="round"/>
+					<path d="M28 48 A20 20 0 0 1 8 28" stroke="#c0392b" stroke-width="3" fill="none" stroke-linecap="round"/>
+					<path d="M8 28 A20 20 0 0 1 28 8" stroke="#d4e4c4" stroke-width="3" fill="none" stroke-linecap="round"/>
+					<circle cx="28" cy="28" r="7" fill="#d4e4c4"/>
+				</svg>
+				<div class="hw-body">
+					<h3 class="hw-name red">The red ring</h3>
+					<p class="hw-desc">Three red quadrants meant hardware failure. It happened to enough people that Microsoft extended the warranty to three years. You probably saw it at least once.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ABOUT -->
+	<div id="about" class="page">
+		<div class="about-content">
+			<p class="pg-label">About</p>
+			<h2 class="pg-title">What <span class="stroke">this</span> is.</h2>
+			<p class="graf">The Xbox 360 was just a box. A loud, warm, slightly unreliable box that sat under your TV and made a lot of people very happy for a long time.</p>
+			<p class="graf">This site is a document of that era. The games, the hardware, the culture around it. <strong>No rankings. No scores.</strong> Just memory, written down before it fades completely.</p>
+			<p class="graf">If you were there, you already know what this feels like. If you weren&rsquo;t &mdash; welcome. It was something.</p>
+			<div class="divider"></div>
+		</div>
+	</div>
 
 	<script src="./assets/js/main.js"></script>
 </body>
