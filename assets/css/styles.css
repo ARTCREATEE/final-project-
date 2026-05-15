@@ -435,6 +435,42 @@ body {
 
 
 
+/* ── Back link ── */
+.back-link {
+	display: inline-block;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaa;
+	cursor: pointer;
+	margin-bottom: 32px;
+	transition: color 0.2s ease;
+}
+
+.back-link:hover {
+	color: var(--ink);
+}
+
+/* ── Single hardware page ── */
+.hw-single {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	max-width: 480px;
+	padding-top: 8px;
+}
+
+.hw-hero-icon {
+	width: 120px;
+	height: 120px;
+}
+
+.hw-single-desc {
+	font-size: 15px;
+	color: var(--muted);
+	line-height: 1.85;
+}
+
 
 
 
