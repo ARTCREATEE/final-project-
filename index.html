@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="./assets/css/styles.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -23,6 +23,7 @@
 	<!-- LANDING -->
 	<div id="landing" class="page visible">
 		<div class="landing-body">
+
 			<div class="landing-left">
 				<p class="eyebrow">A memory &middot; 2005 &ndash; 2013</p>
 				<h1 class="headline">
@@ -36,26 +37,152 @@
 					This is a record
                     to bring back the moments of 
 					holding that controller back then.
-	
-	             </p>
+				</p>
 				<span class="cta" data-page="games">Read on &rarr;</span>
 			</div>
-			<div class="landing-right">
-				<svg class="ring-svg" viewBox="0 0 160 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-					<circle cx="80" cy="80" r="72" stroke="#c8ddb8" stroke-width="0.5"/>
-					<circle cx="80" cy="80" r="54" stroke="#c8ddb8" stroke-width="0.5"/>
-					<circle cx="80" cy="80" r="36" stroke="#107c10" stroke-width="1"/>
-					<circle cx="80" cy="80" r="20" fill="#107c10"/>
-					<text x="80" y="86" font-family="Anton" font-size="18" fill="#eef4e8" text-anchor="middle" letter-spacing="2">X</text>
-					<circle cx="80" cy="26" r="4" fill="#c8ddb8"/>
-					<circle cx="134" cy="80" r="4" fill="#c8ddb8"/>
-					<circle cx="80" cy="134" r="4" fill="#c8ddb8"/>
-					<circle cx="26" cy="80" r="4" fill="#107c10"/>
-				</svg>
-				<p class="ring-label">Ring of light</p>
-				<span class="tag-pill">2005 &ndash; 2013</span>
+
+			<!-- INTERACTIVE CARDS -->
+			<div class="landing-cards">
+
+				<div class="card" data-page="hardware" data-label="Console">
+					<div class="card-inner">
+						<svg viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<!-- body -->
+							<rect x="10" y="20" width="120" height="62" rx="8" fill="#d4e4c4"/>
+							<!-- top sheen -->
+							<rect x="10" y="20" width="120" height="26" rx="8" fill="#c2d8b0"/>
+							<!-- disc slot -->
+							<rect x="38" y="30" width="50" height="8" rx="2" fill="#b0c8a0"/>
+							<!-- disc glow -->
+							<rect x="40" y="31" width="46" height="6" rx="1.5" fill="#a0bc90" opacity="0.6"/>
+							<!-- vents -->
+							<line x1="100" y1="22" x2="100" y2="46" stroke="#a0bc90" stroke-width="1.5"/>
+							<line x1="106" y1="22" x2="106" y2="46" stroke="#a0bc90" stroke-width="1.5"/>
+							<line x1="112" y1="22" x2="112" y2="46" stroke="#a0bc90" stroke-width="1.5"/>
+							<!-- guide button -->
+							<circle cx="26" cy="56" r="10" fill="#107c10"/>
+							<text x="26" y="60" font-family="Anton" font-size="9" fill="#eef4e8" text-anchor="middle">X</text>
+							<!-- usb ports -->
+							<rect x="38" y="52" width="8" height="5" rx="1" fill="#a0bc90"/>
+							<rect x="50" y="52" width="8" height="5" rx="1" fill="#a0bc90"/>
+							<!-- base -->
+							<rect x="20" y="78" width="100" height="6" rx="3" fill="#b8ccaa"/>
+						</svg>
+					</div>
+					<div class="card-label">Console</div>
+				</div>
+
+				<div class="card" data-page="hardware" data-label="Controller">
+					<div class="card-inner">
+						<svg viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<!-- body -->
+							<ellipse cx="70" cy="48" rx="46" ry="30" fill="#d4e4c4"/>
+							<!-- left grip -->
+							<ellipse cx="36" cy="72" rx="18" ry="22" fill="#c2d8b0"/>
+							<!-- right grip -->
+							<ellipse cx="104" cy="72" rx="18" ry="22" fill="#c2d8b0"/>
+							<!-- guide ring -->
+							<circle cx="70" cy="44" r="10" fill="#107c10"/>
+							<text x="70" y="48" font-family="Anton" font-size="9" fill="#eef4e8" text-anchor="middle">X</text>
+							<!-- ABXY buttons -->
+							<circle cx="96" cy="34" r="5" fill="#c0392b"/>
+							<text x="96" y="37" font-family="Anton" font-size="5" fill="#fff" text-anchor="middle">B</text>
+							<circle cx="108" cy="44" r="5" fill="#107c10"/>
+							<text x="108" y="47" font-family="Anton" font-size="5" fill="#fff" text-anchor="middle">A</text>
+							<circle cx="84" cy="44" r="5" fill="#1a6bb5"/>
+							<text x="84" y="47" font-family="Anton" font-size="5" fill="#fff" text-anchor="middle">X</text>
+							<circle cx="96" cy="54" r="5" fill="#c8a000"/>
+							<text x="96" y="57" font-family="Anton" font-size="5" fill="#fff" text-anchor="middle">Y</text>
+							<!-- left stick -->
+							<circle cx="50" cy="54" r="9" fill="#b0c8a0"/>
+							<circle cx="50" cy="54" r="5" fill="#9cba8c"/>
+							<!-- right stick -->
+							<circle cx="84" cy="62" r="9" fill="#b0c8a0"/>
+							<circle cx="84" cy="62" r="5" fill="#9cba8c"/>
+							<!-- d-pad -->
+							<rect x="35" y="38" width="6" height="18" rx="2" fill="#b0c8a0"/>
+							<rect x="28" y="45" width="20" height="6" rx="2" fill="#b0c8a0"/>
+							<!-- bumpers -->
+							<rect x="22" y="22" width="30" height="7" rx="3.5" fill="#c2d8b0"/>
+							<rect x="88" y="22" width="30" height="7" rx="3.5" fill="#c2d8b0"/>
+						</svg>
+					</div>
+					<div class="card-label">Controller</div>
+				</div>
+
+				<div class="card" data-page="games" data-label="Games">
+					<div class="card-inner">
+						<svg viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<!-- disc stack shadow -->
+							<ellipse cx="70" cy="82" rx="38" ry="6" fill="#b8ccaa" opacity="0.5"/>
+							<!-- disc 3 (back) -->
+							<ellipse cx="70" cy="68" rx="36" ry="8" fill="#c2d8b0"/>
+							<ellipse cx="70" cy="66" rx="36" ry="8" fill="#c8deb4"/>
+							<ellipse cx="70" cy="66" rx="12" ry="3" fill="#b0c8a0"/>
+							<!-- disc 2 (mid) -->
+							<ellipse cx="70" cy="56" rx="36" ry="8" fill="#b8d4a8"/>
+							<ellipse cx="70" cy="54" rx="36" ry="8" fill="#c2d8b0"/>
+							<ellipse cx="70" cy="54" rx="12" ry="3" fill="#a8c098"/>
+							<!-- disc 1 (front) -->
+							<ellipse cx="70" cy="44" rx="36" ry="8" fill="#aec898"/>
+							<ellipse cx="70" cy="42" rx="36" ry="8" fill="#bcd4a4"/>
+							<!-- disc shine -->
+							<ellipse cx="60" cy="38" rx="10" ry="3" fill="#cce0b4" opacity="0.6" transform="rotate(-20 60 38)"/>
+							<!-- center hole -->
+							<ellipse cx="70" cy="42" rx="5" ry="2" fill="#d4e4c4"/>
+							<!-- green ring on front disc -->
+							<ellipse cx="70" cy="42" rx="18" ry="4" fill="none" stroke="#107c10" stroke-width="1" opacity="0.4"/>
+							<!-- case spine -->
+							<rect x="18" y="18" width="14" height="56" rx="2" fill="#107c10"/>
+							<text x="25" y="50" font-family="Anton" font-size="6" fill="#eef4e8" text-anchor="middle" transform="rotate(90 25 50)">GAMES</text>
+						</svg>
+					</div>
+					<div class="card-label">Games</div>
+				</div>
+
+				<div class="card" data-page="hardware" data-label="Kinect">
+					<div class="card-inner">
+						<svg viewBox="0 0 140 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<!-- base stand -->
+							<rect x="54" y="72" width="32" height="8" rx="3" fill="#b0c8a0"/>
+							<rect x="60" y="66" width="20" height="10" rx="2" fill="#b8d0a4"/>
+							<!-- main bar body -->
+							<rect x="14" y="36" width="112" height="34" rx="10" fill="#d4e4c4"/>
+							<!-- top sheen -->
+							<rect x="14" y="36" width="112" height="14" rx="10" fill="#c8ddb8"/>
+							<!-- lens housing left -->
+							<circle cx="38" cy="53" r="12" fill="#b8ccaa"/>
+							<circle cx="38" cy="53" r="8" fill="#a8bc9a"/>
+							<circle cx="38" cy="53" r="5" fill="#90a882"/>
+							<circle cx="36" cy="51" r="1.5" fill="#c8ddb8" opacity="0.7"/>
+							<!-- lens housing center -->
+							<circle cx="70" cy="53" r="9" fill="#b8ccaa"/>
+							<circle cx="70" cy="53" r="6" fill="#107c10" opacity="0.7"/>
+							<circle cx="70" cy="53" r="3" fill="#107c10"/>
+							<circle cx="68.5" cy="51.5" r="1" fill="#9aff57" opacity="0.6"/>
+							<!-- lens housing right -->
+							<circle cx="102" cy="53" r="12" fill="#b8ccaa"/>
+							<circle cx="102" cy="53" r="8" fill="#a8bc9a"/>
+							<circle cx="102" cy="53" r="5" fill="#90a882"/>
+							<circle cx="100" cy="51" r="1.5" fill="#c8ddb8" opacity="0.7"/>
+							<!-- mic dots -->
+							<circle cx="52" cy="53" r="1.5" fill="#a0b890"/>
+							<circle cx="57" cy="53" r="1.5" fill="#a0b890"/>
+							<circle cx="83" cy="53" r="1.5" fill="#a0b890"/>
+							<circle cx="88" cy="53" r="1.5" fill="#a0b890"/>
+							<!-- indicator light -->
+							<circle cx="125" cy="53" r="3" fill="#107c10"/>
+							<circle cx="125" cy="53" r="2" fill="#5adf5a" opacity="0.8"/>
+						</svg>
+					</div>
+					<div class="card-label">Kinect</div>
+				</div>
+
 			</div>
+			<!-- end cards -->
+
 		</div>
+
 		<div class="landing-footer">
 			<div class="footer-games">
 				<span>Kinect Adventures</span>
@@ -79,8 +206,7 @@
 					<p class="g-genre">Sports enjoyment</p>
 					<h3 class="g-name">Kinect Adventures</h3>
 					<p class="g-desc">Going to explore and navigate rafts were the typical routines without being outside. Minigames and activities were always something to look forward to. It was great going on a journey at the comfort of my own home. 
-
- </p>
+</p>
 				</div>
 				<div class="g-dot on"></div>
 			</div>
@@ -91,7 +217,6 @@
 					<p class="g-genre">Action-Adventure</p>
 					<h3 class="g-name">Lego Star Wars III the Clone Wars</h3>
 					<p class="g-desc">Playing as Ahsoka Tano in lego form was pretty fun. Since I was watching the Star Wars Clone Wars TV show at that time I already knew what was going to happen in the levels. Despite that it was nice playing this story retold in a toy world.
-
 </p>
 				</div>
 				<div class="g-dot"></div>
@@ -103,6 +228,7 @@
 					<p class="g-genre">Fighting entertainment</p>
 					<h3 class="g-name">Powerup Heroes</h3>
 					<p class="g-desc">Beating up enemies was enjoyable and a workout too at times since it's kinect. The more you defeated the harder it got. Though you get some cool updates and looks so that's a plus. 
+
 </p>
 				</div>
 				<div class="g-dot"></div>
@@ -113,12 +239,16 @@
 				<div class="g-body">
 					<p class="g-genre">Side-Scrolling</p>
 					<h3 class="g-name">Rayman Origins</h3>
-					<p class="g-desc">This was pretty original in general which drew me to it. I really liked the mechanics and the storyline. This one of the games I spent a lot of time playing at that time because of how creative it was. </p>
-
+					<p class="g-desc">
+This was pretty original in general which drew me to it. I really liked the mechanics and the storyline. This one of the games I spent a lot of time playing at that time because of how creative it was.
+</p>
 				</div>
-					<div class="g-dot"></div>
+				<div class="g-dot"></div>
 			</div>
 
+			
+		</div>
+	</div>
 
 	<!-- HARDWARE -->
 	<div id="hardware" class="page">
@@ -170,6 +300,24 @@
 				<div class="hw-body">
 					<h3 class="hw-name red">The red ring</h3>
 					<p class="hw-desc">Three red quadrants meant hardware failure. It happened to enough people that Microsoft extended the warranty to three years. You probably saw it at least once.</p>
+				</div>
+			</div>
+
+			<div class="hw-row">
+				<svg class="hw-icon" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<rect x="4" y="20" width="48" height="18" rx="5" fill="#d4e4c4"/>
+					<rect x="4" y="20" width="48" height="8" rx="5" fill="#c8ddb8"/>
+					<circle cx="14" cy="29" r="5" fill="#b0c8a0"/>
+					<circle cx="14" cy="29" r="3" fill="#a0b890"/>
+					<circle cx="28" cy="29" r="4" fill="#107c10" opacity="0.8"/>
+					<circle cx="28" cy="29" r="2" fill="#107c10"/>
+					<circle cx="42" cy="29" r="5" fill="#b0c8a0"/>
+					<circle cx="42" cy="29" r="3" fill="#a0b890"/>
+					<rect x="22" y="38" width="12" height="6" rx="2" fill="#b8ccaa"/>
+				</svg>
+				<div class="hw-body">
+					<h3 class="hw-name">Kinect</h3>
+					<p class="hw-desc">No controller needed. It saw you, tracked you, heard you. It worked better than people expected and worse than Microsoft promised. Still — it was something new.</p>
 				</div>
 			</div>
 		</div>
