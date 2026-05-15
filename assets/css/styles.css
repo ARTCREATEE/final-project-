@@ -475,6 +475,163 @@ body {
 
 
 
-	
+
+/* Hide default cursor sitewide */
+* { cursor: none !important; }
+
+/* ── Avatar cursor ── */
+#avatar-cursor {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 48px;
+	height: 64px;
+	pointer-events: none;
+	z-index: 9999;
+	transition: opacity 0.2s ease;
+	filter: drop-shadow(0 2px 6px rgba(0,0,0,0.18));
+}
+
+/* ── Back link ── */
+.back-link {
+	display: inline-block;
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #aaa;
+	cursor: none;
+	margin-bottom: 32px;
+	transition: color 0.2s ease;
+}
+
+.back-link:hover { color: var(--ink); }
+
+/* ── Single hardware page ── */
+.hw-single {
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	max-width: 480px;
+	padding-top: 8px;
+}
+
+.hw-hero-icon {
+	width: 120px;
+	height: 120px;
+}
+
+.hw-single-desc {
+	font-size: 15px;
+	color: var(--muted);
+	line-height: 1.85;
+}
+
+/* ── Let's Play overlay ── */
+#letsplay-overlay {
+	position: fixed;
+	inset: 0;
+	background: rgba(14, 24, 14, 0.96);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 9998;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.6s ease;
+	text-align: center;
+	padding: 40px;
+}
+
+#letsplay-overlay.visible {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.letsplay-eyebrow {
+	font-size: 11px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	color: #107c10;
+	margin-bottom: 20px;
+}
+
+.letsplay-headline {
+	font-family: 'Anton', sans-serif;
+	font-size: clamp(64px, 12vw, 120px);
+	color: #eef4e8;
+	text-transform: uppercase;
+	line-height: 0.9;
+	margin-bottom: 48px;
+	letter-spacing: 4px;
+}
+
+.letsplay-headline span {
+	-webkit-text-stroke: 2px #107c10;
+	color: transparent;
+}
+
+.letsplay-avatar {
+	margin-bottom: 40px;
+	filter: drop-shadow(0 0 20px rgba(16,124,16,0.4));
+	animation: floatAvatar 3s ease-in-out infinite;
+}
+
+@keyframes floatAvatar {
+	0%, 100% { transform: translateY(0); }
+	50%       { transform: translateY(-10px); }
+}
+
+.letsplay-btn {
+	display: inline-block;
+	background: #107c10;
+	color: #eef4e8;
+	font-family: 'Anton', sans-serif;
+	font-size: 16px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 18px 48px;
+	border-radius: 4px;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.letsplay-btn:hover {
+	background: #0d6b0d;
+	transform: translateY(-2px);
+}
+
+.letsplay-sub {
+	font-size: 11px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: #555;
+	margin-top: 20px;
+}
+
+/* Progress dots — shows which pages visited */
+.progress-dots {
+	position: fixed;
+	bottom: 24px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 8px;
+	z-index: 100;
+	pointer-events: none;
+}
+
+.progress-dot {
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #d4e4c4;
+	transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.progress-dot.filled {
+	background: #107c10;
+	transform: scale(1.3);
+}	
 	
 
