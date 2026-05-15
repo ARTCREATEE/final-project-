@@ -1,4 +1,5 @@
-/* styles.css */
+/* styles.css — Xbox 360 Memory Site */
+
 /* Reset & Base */
 *, *::before, *::after {
 	box-sizing: border-box;
@@ -24,7 +25,7 @@ body {
 	min-height: 100vh;
 }
 
-/* Nav */
+/* ── Nav ── */
 .nav {
 	display: flex;
 	justify-content: space-between;
@@ -61,7 +62,7 @@ body {
 	color: var(--ink);
 }
 
-/* Page visibility */
+/* ── Page visibility ── */
 .page {
 	display: none;
 	flex-direction: column;
@@ -72,13 +73,13 @@ body {
 	display: flex;
 }
 
-/* Landing */
+/* ── Landing ── */
 .landing-body {
 	flex: 1;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 48px;
-	align-items: start;
+	align-items: center;
 	padding: 56px 48px 0;
 }
 
@@ -129,36 +130,104 @@ body {
 
 .cta:hover { opacity: 0.5; }
 
-.landing-right {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+/* ── Interactive cards ── */
+.landing-cards {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 	gap: 14px;
-	padding-top: 8px;
 }
 
-.ring-svg {
-	width: 160px;
-	height: 160px;
+.card {
+	position: relative;
+	background: #fff;
+	border: 0.5px solid var(--border);
+	border-radius: 12px;
+	padding: 20px 16px 14px;
+	cursor: pointer;
+	transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+	overflow: hidden;
 }
 
-.ring-label {
-	font-size: 10px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	color: #bbb;
+.card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 12px 32px rgba(16, 124, 16, 0.12);
+	border-color: var(--green);
 }
 
-.tag-pill {
+/* green corner accent */
+.card::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 28px;
+	height: 28px;
 	background: var(--green);
-	color: var(--bg);
-	font-size: 10px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-	padding: 5px 16px;
-	border-radius: 40px;
+	border-radius: 12px 0 12px 0;
+	opacity: 0;
+	transition: opacity 0.22s ease;
 }
 
+.card:hover::before {
+	opacity: 1;
+}
+
+.card-inner {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 90px;
+}
+
+.card-inner svg {
+	width: 100%;
+	height: 90px;
+	transition: transform 0.22s ease;
+}
+
+.card:hover .card-inner svg {
+	transform: scale(1.06);
+}
+
+.card-label {
+	font-family: 'Anton', sans-serif;
+	font-size: 13px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	color: var(--ink);
+	text-align: center;
+	margin-top: 10px;
+	transition: color 0.22s ease;
+}
+
+.card:hover .card-label {
+	color: var(--green);
+}
+
+/* hover overlay text */
+.card::after {
+	content: attr(data-label);
+	position: absolute;
+	inset: 0;
+	background: rgba(238, 244, 232, 0.92);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Anton', sans-serif;
+	font-size: 20px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: var(--green);
+	border-radius: 12px;
+	opacity: 0;
+	transition: opacity 0.2s ease;
+}
+
+.card:hover::after {
+	opacity: 1;
+}
+
+/* ── Landing footer ── */
 .landing-footer {
 	padding: 28px 48px;
 	display: flex;
@@ -186,7 +255,7 @@ body {
 	line-height: 1;
 }
 
-/* Inner pages */
+/* ── Inner pages ── */
 .inner-content {
 	padding: 56px 48px 48px;
 	flex: 1;
@@ -209,7 +278,7 @@ body {
 	color: var(--ink);
 }
 
-/* Games */
+/* ── Games ── */
 .game-entry {
 	display: grid;
 	grid-template-columns: 32px 1fr 12px;
@@ -265,7 +334,7 @@ body {
 
 .g-dot.on { background: var(--green); }
 
-/* Hardware */
+/* ── Hardware ── */
 .hw-row {
 	display: grid;
 	grid-template-columns: 72px 1fr;
@@ -303,7 +372,7 @@ body {
 	max-width: 420px;
 }
 
-/* About */
+/* ── About ── */
 .about-content {
 	padding: 56px 48px 48px;
 	max-width: 560px;
@@ -329,23 +398,20 @@ body {
 	margin-top: 32px;
 }
 
-/* Responsive */
-@media (max-width: 640px) {
-	.nav { padding: 20px 24px; }
-	.nav-links { gap: 20px; }
-
+/* ── Responsive ── */
+@media (max-width: 768px) {
 	.landing-body {
 		grid-template-columns: 1fr;
 		padding: 40px 24px 0;
 	}
 
-	.landing-right {
-		align-items: flex-start;
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
 	.headline { font-size: 64px; }
+}
+
+@media (max-width: 640px) {
+	.nav { padding: 20px 24px; }
+	.nav-links { gap: 20px; }
+
 	.landing-footer { padding: 24px; }
 	.footer-games { flex-wrap: wrap; gap: 14px; }
 
@@ -364,4 +430,15 @@ body {
 		gap: 18px;
 	}
 }
+
+
+
+
+
+
+
+
+
+	
+	
 
